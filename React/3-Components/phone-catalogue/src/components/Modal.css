@@ -1,0 +1,16 @@
+.modal-body {
+  display: flex;
+}
+.modal-img,
+.modal-description {
+  width: 50%;
+}
+.modal-img {
+  text-align: center;
+}
+.modal-img img {
+  width: 100%;
+}
+.modal-price {
+  font-weight: bold;
+}

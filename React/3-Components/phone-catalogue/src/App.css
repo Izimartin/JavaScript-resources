@@ -1,0 +1,33 @@
+.App-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+}
+.App-input {
+  padding-left: 10px;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.App-products {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.App-spinner {
+  position: relative;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 850px) {
+  .App-container {
+    width: 95%;
+  }
+}

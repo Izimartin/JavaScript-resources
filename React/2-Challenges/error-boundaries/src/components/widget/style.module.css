@@ -1,0 +1,8 @@
+.widget {
+    border: 1px solid blue;
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}

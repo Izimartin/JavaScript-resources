@@ -1,7 +1,3 @@
-// Every interviewer loves to indulge in closure-related discussion. 
-// So do I. For a JavaScript developer, it's crucial to understand how closure works. 
-// There are a few theoretical questions as follows that I usually ask at the beginning:
-
 // Explain the pros and cons of closure.
 // What would happen if I remove the closure feature from JavaScript?
 // What could be the alternative to closure?
@@ -12,11 +8,8 @@ for (let i = 0; i < 5; i++) {
     }, 0);
 }
 
-// I ask for evaluating the output of the above program. 
 // If you think it should print 5, 5, 5, 5, 5 then you have not noticed the let declaration. 
-// Actually, it should print 0, 1, 2, 3, 4. There is another question that I usually ask during an interview to write a program on a private counter using a closure. 
-// Or simply, 
-// I just ask what should be the output of the following program.
+// Actually, it should print 0, 1, 2, 3, 4. 
 
 let counter = function () {
     let k = 0;
@@ -62,7 +55,7 @@ function createClosure(n) {
 }
 
     for (var index = 0; index < 10; index++) {
-        arr[index] = createClosure(index);
+        Arr[index] = createClosure(index);
     }
 
 for (var index in Arr) {

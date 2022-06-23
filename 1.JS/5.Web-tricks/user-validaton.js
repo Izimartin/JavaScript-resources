@@ -7,14 +7,13 @@ function ValidationFunc(str) {
     if (len >= 4 && len <= 25) &&
         // first character must be a letter. It can only contains letters, numbers, underscores and can't end in underscore
         (FirstChar.match(/[a-z]/i)) && (str.match("^[A-Za-z0-9_]*$")) && (!LastChar.match(/_/i)) {
-        {
-            str = true;
-        }
-    else {
-            str = false;
-        }
-        return str;
+            {
+                str = true;
+            } else {
+                str = false;
+            }
+            return str;
 
-    }
+        }
 
     console.log(ValidationFunc(readline()));

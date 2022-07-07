@@ -1,0 +1,35 @@
+.grid-main {
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: auto auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-content {
+  border: 10px solid #212121;
+  border-radius: 30px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-content-alt {
+  border: 10px solid #f44336;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-images {
+  width: 200px;
+  cursor: pointer;
+}
+
+.final-score {
+  text-align: center;
+}

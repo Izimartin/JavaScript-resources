@@ -8,7 +8,7 @@ const app = express();
 async function getUser() {
     return {
         id: 123,
-        name: 'leo',
+        name: 'fab',
     };
 }
 

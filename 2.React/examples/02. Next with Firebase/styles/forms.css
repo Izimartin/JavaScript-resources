@@ -1,0 +1,74 @@
+.register, .login, .confirm-email {
+  padding: 25px;
+  background: rgba(235,235,235,0.9);
+  border-radius: 12px;
+}
+
+form h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mes-alert {
+  margin-bottom: 8px;
+  color: red;
+  font-weight: 500;
+  height: 1em;
+}
+
+form input {
+  padding: 12px 15px;  
+  text-align: left;
+  border-radius: 6px;
+  margin: 0 10px 20px 10px;
+  font-size: 1.1em;
+  border: none;
+}
+
+form input:focus, form button:focus {
+  outline: none;
+}
+
+form button, .already-btn button, .forgot-btn button {
+  margin: 5px 0 5px 0;
+  border: none;
+  background: none;
+  font-size: 1em;
+}
+
+form input:hover, form button:hover, .already-btn button{
+  cursor: pointer;
+}
+
+form button:hover, .already-btn button:hover {
+  transition: all 0.2s ease-in;
+  text-decoration: underline;
+  color: blue;
+}
+
+.already-btn, .forgot-btn {
+  margin-top: 15px;
+  flex-direction: row;
+  font-size: 1em;
+}
+
+.already-btn button, .forgot-btn button{
+  margin-left: 5px;
+  font-size: 1em;
+  color: blue
+}
+
+.forgot-btn {
+  margin: 5px 0 0 0
+}
+
+.forgot-btn button{
+  color: blue;
+  margin: 0
+}
+
+
+.confirm-email .mes-alert {
+  color:green
+}

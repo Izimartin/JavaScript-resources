@@ -1,0 +1,97 @@
+
+.header {
+  height: 75px;
+}
+
+.header ul {
+  width: 80%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+
+  /* background: rgba(220,220,220,0.8); */
+}
+
+.header ul li a, .header ul li button{
+  border: none;
+  background: none;
+  font-size: 1em;
+  margin: 0 10px 0 25px;
+  color: rgb(50,50,50)
+}
+
+.header ul li a:hover, .header ul li button:hover{
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.header ul li a:focus, .header ul li button:focus{
+  outline: none;
+}
+
+.profile {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.profile h1 {
+  margin: 20px 0 10px 0;
+  font-size: 1.5em;
+}
+
+.profile-form {
+  margin-top: 20px;
+  padding: 40px;
+  border-radius: 12px;
+  
+  background: rgba(220,220,220,0.5);
+}
+
+
+.profile-image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile-image input{
+  padding-left: 80px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-wrapper {
+  flex-direction: row;
+  margin: 20px 0;
+  height: 25px;
+}
+.button-wrapper div {
+  margin: 0 10px
+}
+
+.profile-value input {
+  width: 350px;
+}
+
+.profile-form button {
+  background: #4DBEF7;
+  width: 180px;
+  padding: 12px 8px;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.2s ease-in;
+}
+
+.profile-form button:hover {
+  background: #96DCFF;
+  color: white;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}

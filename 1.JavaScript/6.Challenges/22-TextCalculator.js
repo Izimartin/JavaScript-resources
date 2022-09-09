@@ -10,38 +10,22 @@
  * - El resultado se muestra al finalizar la lectura de la última línea (si el .txt es correcto).
  * - Si el formato del .txt no es correcto, se indicará que no se han podido resolver las operaciones.
  *
-
  */
-
 
 if (result == null) {
     result = number
 } else {
-    when(lastOperator) {
-        "+"-> {
-            result = result?.plus(number)
-        }
-        "-"-> {
-            result = result?.minus(number)
-        }
-        "*"-> {
-            result = result?.times(number)
-        }
-        "/"-> {
-            result = result?.div(number)
-        }
-        else -> {
+    switch (lastOperator) {
+        case "+":
+            result = result?.plus(number);
+        case "-":
+            result = result?.minus(number);
+        case "*":
+            result = result?.times(number);
+        case "/":
+            result = result?.div(number);
+        default:
             fileError = true
-            return@forEachLine
-        }
+            return result
     }
-    lastOperator = null
-}
-} ?: run {
-if (lastOperator == null) {
-    lastOperator = line
-} else {
-    fileError = true
-    return@forEachLine
-}
 }

@@ -1,13 +1,8 @@
 // The filrer() method created a new array with aray elements that passes a test.
 
-var numbers = [45, 4, 9, 16, 25, 13];
-var over18 = numbers.filter(myFunction);
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
-document.getElementById("demo").innerHTML = over18;
+const result = words.filter(word => word.length > 6);
 
-function myFunction(value, index array) {
-    return value > 18;
-}
-
-//OUTPUT
-//45, 25
+console.log(result);
+// expected output: ["exuberant", "destruction", "present"]

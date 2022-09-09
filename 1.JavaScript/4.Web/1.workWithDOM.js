@@ -13,6 +13,9 @@ document.getElementById("btnClick").addEventListener("click", clicked);
 function clicked() {
         alert("You clicked me!!!");
 }
+
+document.write("<b> Hi wrie </b><br />");
+
 // Document
 getElementById() // returns the element with the specified id.
 getElementByTagName() // returns a list of elements with the specified tag name.

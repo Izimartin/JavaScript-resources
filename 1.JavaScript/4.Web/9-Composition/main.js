@@ -1,21 +1,21 @@
 
 const showData = (state) => ({
-    showData: ()=>{
+    showData: () => {
         console.log(state.data);
     }
 })
 
 const requestService = (state) => ({
-    requestService: async ()=>{
+    requestService: async () => {
         const response = await fetch(state.url);
         state.data = await response.json();
     }
 })
 
 const showInHtml = (state) => ({
-    showInHtml: ()=>{
-        state.htmlElement.innerHTML="";
-        state.data.forEach(element=>{
+    showInHtml: () => {
+        state.htmlElement.innerHTML = "";
+        state.data.forEach(element => {
             state.htmlElement.innerHTML += `
                 <div>
                     <b>${element.title}</b>
@@ -25,22 +25,22 @@ const showInHtml = (state) => ({
     }
 });
 
-const usersModel = (url, htmlElement) =>{
-    let state ={
+const usersModel = (url, htmlElement) => {
+    let state = {
         data: null,
         url: url,
         htmlElement: htmlElement
     }
 
     return Object.assign(state,
-         showData(state),
-         requestService(state),
-         showInHtml(state)
-         )
+        showData(state),
+        requestService(state),
+        showInHtml(state)
+    )
 }
 
-let users = usersModel("https://jsonplaceholder.typicode.com/todos",here);
-users.requestService().then(()=>{
+let users = usersModel("https://jsonplaceholder.typicode.com/todos",);
+users.requestService().then(() => {
     users.showData();
     users.showInHtml();
 });

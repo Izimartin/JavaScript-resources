@@ -1,4 +1,4 @@
-class Display extends React.Compponets({
+class Display extends React.Component({
     show(evt) {
         alert(evt.target.value);
     },

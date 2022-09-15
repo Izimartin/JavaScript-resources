@@ -1,3 +1,5 @@
+// useLayoutEffect: It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
+
 import { useLayoutEffect, useEffect, useRef } from "react";
 
 function LayoutEffectTutorial() {

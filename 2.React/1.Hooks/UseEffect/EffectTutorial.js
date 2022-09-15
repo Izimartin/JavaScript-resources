@@ -1,3 +1,5 @@
+// useEffect: To manage side-effects like API calls, subscriptions, timers, mutations, and more.
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 

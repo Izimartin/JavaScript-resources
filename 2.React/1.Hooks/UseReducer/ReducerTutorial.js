@@ -1,3 +1,5 @@
+// useReducer: A useState alternative to help with complex state management.
+
 import React, { useReducer } from "react";
 
 const reducer = (state, action) => {

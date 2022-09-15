@@ -1,3 +1,5 @@
+// useMemo: It returns a memoized value that helps in performance optimizations.
+
 import axios from "axios";
 import { useEffect, useState, useMemo } from "react";
 

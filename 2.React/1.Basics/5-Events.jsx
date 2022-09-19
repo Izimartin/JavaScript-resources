@@ -8,3 +8,8 @@ class Display extends React.Compponets({
         );
     }
 });
+// event key
+onKeyPress = {
+    (event) =>
+      event.key === ‘Enter’ && handleSearch()   //check the equality
+  }

@@ -10,7 +10,7 @@
  * object of a Product class. The Creator's subclasses usually provide the
  * implementation of this method.
  */
-abstract class Creator {
+ abstract class Creator {
     /**
      * Note that the Creator may also provide some default implementation of the
      * factory method.

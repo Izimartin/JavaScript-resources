@@ -19,7 +19,6 @@ export const makeSmoothie = async () => {
 
   return [a, b];
 };
-
 // Async + Await Promised
 const makeSmoothie2 = () => {
   let a;
@@ -30,6 +29,3 @@ const makeSmoothie2 = () => {
     })
     .then(v => [a, v]);
 };
-
-makeSmoothie();
-makeSmoothie2();

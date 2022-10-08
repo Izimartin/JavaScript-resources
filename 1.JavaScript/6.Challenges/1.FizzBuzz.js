@@ -14,4 +14,4 @@ const fizzbuzz = (num) => {
     }
   }
 };
-fizzbuzz(15)
+fizzbuzz(65)

@@ -1,4 +1,4 @@
-3.// We must check that the number n that we are passing to the function is equal to or less than 1, if this is the case we have to return n as the result of the function.
+// We must check that the number n that we are passing to the function is equal to or less than 1, if this is the case we have to return n as the result of the function.
 // Otherwise, the function will call itself again, passing the calculation of n-1 and n-2 respectively as its argument, and later it will return the sum of both invocations as its result.
 
 // 1. Recursion

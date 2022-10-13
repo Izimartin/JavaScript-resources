@@ -1,1 +1,0 @@
-arr[arr.length] = value; 

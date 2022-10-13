@@ -15,4 +15,5 @@ function palindrome(str) {
     return true; // Ambas partes son estrictamente iguales, y regresa true => La cadena de texto es un palindromo.
 }
 
-palindrome("A man, a plan, a canal. Panama");
+console.log(palindrome("fuji"))
+console.log(palindrome("ama"))

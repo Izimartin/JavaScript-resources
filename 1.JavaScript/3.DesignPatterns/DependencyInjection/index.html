@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js' type="module"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    class News {
+        constructor(url, parameter) {
+            this.url = url + "/" + parameter;
+        }
+
+        async get() {
+            let posts = await fetch(this.url)
+                .then(response => response.json())
+                .then(json => json);
+            return posts;
+        }
+    }
+
+    class Writer {
+
+        constructor(news) {
+            this.news = news;
+        }
+
+        async show() {
+            this.posts = await this.news.get();
+            console.log(this.posts.title);
+            /*this.posts.forEach(element => {
+                console.log(element.title);
+            });*/
+        }
+    }
+
+    let news = new News("https://jsonplaceholder.typicode.com/todos/", 2);
+    let writer = new Writer(news);
+    writer.show();
+</script>
+
+</html>

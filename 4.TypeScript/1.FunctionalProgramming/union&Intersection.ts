@@ -1,4 +1,4 @@
-// Union 
+// Union, could act as an interface.
 function sum(a: number | string, b: number | string): number {
     const number1: number = typeof (a) === "number" ? a : Number(a);
     const number2: number = typeof (b) === "number" ? b : Number(b);

@@ -1,6 +1,4 @@
 import * as ReactDOM from 'react-dom/client'
-// import { BrowseCourses } from './BrowseCourses.final'
-// import { BrowseCourses } from './BrowseCourses'
 import { Counter } from './Counter'
 import './styles.scss'
 

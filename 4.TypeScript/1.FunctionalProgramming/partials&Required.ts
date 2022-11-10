@@ -1,4 +1,4 @@
-interface Sale{
+interface Sale {
     customer: string;
     total: number;
     products: string[]

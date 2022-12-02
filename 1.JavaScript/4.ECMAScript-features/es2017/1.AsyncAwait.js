@@ -43,6 +43,4 @@ const sumRandomAsyncNums = async() => {
         random(),
         random()
     ])
-
-
 }

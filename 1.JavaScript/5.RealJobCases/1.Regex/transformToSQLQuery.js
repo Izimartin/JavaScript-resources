@@ -14,4 +14,4 @@ const sql = beersXML
     }, "INSERT INTO Beer(name) VALUES")
     .slice(0, -1);
 
-console.log(sql);
+console.log(sql); 

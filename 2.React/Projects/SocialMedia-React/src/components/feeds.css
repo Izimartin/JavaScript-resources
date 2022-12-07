@@ -1,0 +1,100 @@
+.feeds{
+    width: 50%;
+
+}
+
+.feeds__container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.addtostory .bckg{
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    overflow: hidden;
+    border: 2px solid var(--color-success);
+}
+.addtostories, .stories{
+    position: relative;
+
+}
+
+.hehe{
+    background: transparent;
+}
+
+.addtostory .stories::before, .addtostory .addtostories::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    bottom: 0;
+    height: 100%;
+}
+
+.story__profile{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border: 2px solid var(--color-success);
+    width: 2.5rem;
+}
+.addtostories .story__profilee{
+    bottom: 20%;
+    position: absolute;
+    left: 30%;
+    width: 2.5rem;
+    border: 2px solid var(--color-success);
+}
+
+.storyname{
+   font-size: 12px;
+   position: absolute;
+   bottom: 2%;
+   left: 15%;
+  color: #eaf0fb;
+  z-index: 2;
+  
+}
+
+.profile__toggler{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    display: none;
+}
+.profile__toggler p{
+    font-size: 17px;
+  color: var(--backdrop-filter-color);
+  font-weight: 600;
+}
+.profile__toggle{
+    margin-right: 10px;
+    font-size: 25px;
+  padding: 9px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .feeds{
+        width: 70%
+    }
+}
+@media screen and (max-width: 920px) {
+    .feeds{
+        width: 100%
+    }
+    .profile__toggler{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feeds{
+        width: 100%
+    }
+}

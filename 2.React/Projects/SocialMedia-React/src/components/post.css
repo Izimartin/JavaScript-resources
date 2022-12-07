@@ -1,0 +1,169 @@
+.posts{
+    margin: 40px 0;
+    border-radius: var(--border-radius);
+}
+
+.posts__container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.post__container{
+    background-color: var(--color-black);
+    border-radius: var(--border2-radius);    overflow: hidden;
+    backdrop-filter: var( --backdrop-filter);
+    padding: 40px;
+}
+.post__top{
+    display: flex;
+    justify-content: space-between;
+}
+.postimg{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.post__left{
+    display: flex;
+    align-items: center;
+}
+.post__time{
+    font-size: 13px;
+    font-style: italic;
+}
+
+.post__info p:first-child{
+    color: var( --backdrop-filter-color);
+    font-weight: 600;
+}
+
+.post__icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.post__middle{
+    margin-top: -15px;
+}
+.post__middle p{
+    margin-bottom: 15px;
+    color: var( --backdrop-filter-color);
+}
+.post__prof{
+    margin-right: 10px;
+}
+.post__semibottom{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.post__semibottom p{
+    font-size: 14px;
+    font-style: italic;
+    color: var( --backdrop-filter-color);
+}
+
+.like__info{
+    display: flex;
+    align-items: center;
+}
+.post__btnn{
+  display: flex;
+  align-items: center;
+  background: var(--backdrop-background);
+  padding: 10px;
+  backdrop-filter: var( --backdrop-filter);
+  border-radius: var();
+  margin-right: 10px;
+}
+
+.post__bottomm{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.ioo{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__icon{
+    position: relative;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(  --backdrop-background);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.post__form input{
+    background: transparent;
+    width: 90%;
+    border: none;
+    padding: 10px 0;
+  color: var( --backdrop-filter-color);
+  font-size: 15px;
+
+}
+
+.post__form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.post__form button{
+    padding: 7px 15px;
+}
+
+.commentlist{
+    background-color: var(--color-shade);
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentlist-flex{
+    display: flex;
+    align-items: center;
+}
+.comment-delete{
+    font-size: 25px;
+    color: var(--color-primary);
+}
+
+.eachComm{
+    margin-left: 7px;
+}
+
+.i0{
+    margin-right: 3px;
+}
+
+.wee{
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 500px) {
+    .post__container{
+        padding: 10px;
+    }
+    .post__middle p{
+        font-size: 13px;
+    }
+}

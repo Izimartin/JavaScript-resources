@@ -1,0 +1,70 @@
+.online-friends{
+    margin-top: 20px;
+    background-color: var(--color-black);
+    border-radius: var(--border2-radius);
+}
+
+.online-container{
+    padding: 15px 20px;
+}
+
+.online-container .headdy{
+    color: var(--backdrop-filter-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.online-ol{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.online-ol button{
+    padding: 0px;
+}
+
+
+
+.online-top{
+    display: flex;
+}
+
+.online-profile-image{
+    margin-right: 10px;
+    position: relative;
+}
+.dot-green{
+    position: absolute;
+    content: "";
+    height:12px;
+    width: 12px;
+    background-color: rgb(7, 182, 7);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    border:2px solid var(--color-black) ;
+}
+.dot-orange{
+    position: absolute;
+    content: "";
+    height:12px;
+    width: 12px;
+    background-color: rgb(248, 169, 22);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    border:2px solid var(--color-black) ;
+}
+.online-btn{
+    background-color: var(--color-primary);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.message-buttons a{
+    color: white;
+}
+.friendname{
+    font-weight: 600;
+}

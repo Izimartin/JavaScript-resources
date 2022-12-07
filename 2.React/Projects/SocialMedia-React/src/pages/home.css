@@ -1,0 +1,27 @@
+.body__container{
+    display: flex;
+    width: 90%;
+    margin: 40px auto 0;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .body__container{
+        display: flex;
+        width: 90%;
+        margin: 40px auto 0;
+        gap: 20px;
+    }
+    
+
+}
+@media screen and (max-width: 920px) {
+    .body__container{
+        display: block;
+        width: 90%;
+        margin: 40px auto 0;
+        gap: 20px;
+    }
+    
+
+}

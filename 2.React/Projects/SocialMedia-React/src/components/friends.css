@@ -1,0 +1,185 @@
+.friends{
+    width: 25%;
+    position: sticky;
+    z-index: 0;
+    padding-bottom: 20px;
+    height: calc(100vh - 125px);
+    overflow-y: scroll;
+    top: 100px;
+}
+.friends__container{
+    background-color: var(--color-black);
+    border-radius: var(--border2-radius);
+}
+.who-to-follow{
+     padding: 15px 20px;
+}
+.who-to-follow .headdy{
+  color: var(--backdrop-filter-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Who-to-follow-list{
+   display: flex;
+   align-items: center;
+   padding: 15px 0;
+}
+.wtfl-top{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.iii{
+    margin-right: 10px;
+}
+
+.wtfl-middle .friendname{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.wtfl-middle .text-muted{
+    font-size: 13px;
+}
+.wtfl-btn{
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    font-size: 29px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s all;
+    color: var(--backdrop-filter-color);
+}
+.wtfl-btn:hover{
+    background: var(--color-primary);
+    color: var(--backdrop-filter-color);
+}
+.friendname{
+    color: var(--backdrop-filter-color);
+}
+.wtfl-true{
+    background: var(--color-primary);
+    color: var(--backdrop-filter-color);
+}
+
+.showmobilefriends{
+    display: none;
+    z-index: 4;
+}
+.mobileonlinefriends{
+    display: none;
+    z-index: 4;
+}
+
+.mobile__friends{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .friends{
+        width: 100%;
+        display: none;
+    }
+    .showmobilefriends{
+        display: block;
+        position: fixed;
+        bottom: 3%;
+        left: -10%;
+        right: 0;
+        margin: auto;
+        font-size: 40px;
+        background-color: var(--color-primary);
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        backdrop-filter: blur(10px);
+      border: 1px dotted var(--color-primary);
+      animation: pulsing 3s linear infinite var(--s, 0s);
+    }
+
+    .showmobilefriends::before{
+        --s: 1s
+    }
+    .showmobilefriends::after{
+        --s: 1s
+    }
+
+    .showmobilefriends,
+    .showmobilefriends::after,
+    .showmobilefriends::before{
+        content: "";
+        display: grid;
+        grid-area: 1/1;
+        aspect-ratio: 1;
+        box-shadow: 0 0 0 0 var(--color-primary);
+    }
+
+@keyframes pulsing {
+    to {
+        box-shadow: 0 0 0 1.6rem transparent;
+    }
+}
+.chat-online{
+    left: 10%;
+    z-index: 6;
+}
+
+    .mobile__friends{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: rgba(0,0,0,0.1);
+        backdrop-filter: blur(10px);
+       height: 100vh;
+       justify-content: center;
+       align-items: center;
+       overflow-y: scroll;
+    }
+    .mobile-friends-container{
+        width: 80%;
+    }
+    .mobileonlinefriends{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        background-color: rgba(0,0,0,0.1);
+        backdrop-filter: blur(10px);
+       height: 100vh;
+       justify-content: center;
+       align-items: center;
+       z-index: 1;
+       overflow-y: scroll;
+    }
+    .online-container{
+        width: 80%;
+        background-color: var(--color-black);
+        border-radius: 10px;
+    
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobile__friends{
+        width:100%;
+    }
+    .mobileonlinefriends{
+        width: 100%;
+    }
+    .mobile-friends-container{
+        width: 90%;
+    }
+    .showmobilefriends{
+        left: -15%;
+    }
+    .chat-online{
+        left: 15%;
+        z-index: 6;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+}

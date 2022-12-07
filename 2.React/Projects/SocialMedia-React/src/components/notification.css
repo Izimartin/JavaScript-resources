@@ -1,0 +1,53 @@
+.notify-page{
+    position: absolute;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: var(--backdrop-filter);
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.notify-container{
+    padding: 20px;
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.notify-container h1{
+    margin: 20px;
+    color: var(  --backdrop-filter-color);
+}
+
+
+.notify-subcont{
+    padding: 10px 20px;
+    background-color: var( --backdrop-background);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    backdrop-filter: var(--backdrop-filter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notify-subcont p {
+    width: 90%;
+}
+
+.noti-btn{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .notify-subcont p {
+        font-size: 13px;
+    }
+}

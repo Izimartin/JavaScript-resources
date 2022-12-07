@@ -1,0 +1,160 @@
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--backdrop-background);
+    backdrop-filter: var(--backdrop-filter);
+    width: 100%;
+    z-index: 3;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bug{
+    margin-right: 7px;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+.profile__sec{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.srh{
+    position: absolute;
+    left: 3%;
+    font-size: 1.5rem;
+    color: #eaf0fb;
+}
+.header__search{
+    flex: 2;
+}
+
+.header__search input{
+    border-radius: var(--border2-radius);
+    padding: var(--search-padding);
+    width: 100%;
+  background-color: var(--backdrop-background);
+  border: none;
+  margin-right: 10px;
+  padding-left: 2.9rem;
+  font-size: .9rem;
+  color: #eaf0fb;
+}
+.header__search input::placeholder{
+    padding-left: 10px;
+    font-size: 1rem;
+    align-items: center;
+}
+.create{
+    display: flex;
+}
+
+
+.navlinks ul{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+.navlinks ul li a{
+    color: #eaf0fb;
+    margin-right: 20px;
+    transition: all .3s ease;
+}
+
+.navlinks ul li a:hover, .navlinks ul li a.active{
+    color: var(--color-primary);
+}
+
+
+.create button{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 10px;
+    padding: .7rem 1.2rem;
+}
+.cre{
+    margin-right:5px;
+}
+.create .burger{
+    display: none;
+}
+.srh2{
+    display: none;
+}
+
+
+@media screen and (max-width: 920px) {
+    .header__container{
+        padding: 20px 30px;
+    }
+   .navlinks{
+       display: none;
+   }
+.create .burger{
+     display: block;
+ }
+ 
+}
+@media screen and (max-width: 800px) {
+    .header__search{
+        display: none;
+    }
+}
+@media screen and (max-width: 610px) {
+  
+    .header__search{
+        display: none;
+    }
+    .navlinks{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile__sec .cree{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__container{
+        padding: 20px 20px;
+    }
+  
+    .header__search{
+        display: none;
+    }
+    .create button{
+        margin-right: 8px;
+        padding: .7rem 1rem;
+    }
+    .profile__sec .cree{
+        display: none;
+    }
+    
+}

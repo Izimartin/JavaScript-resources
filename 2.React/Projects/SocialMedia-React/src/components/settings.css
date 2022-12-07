@@ -1,0 +1,20 @@
+.settings-subcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.settings-subcont a{
+    color: var(--backdrop-filter-color);
+    background: var(--color-primary);
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.shi{
+    margin-right: 5px;
+}
